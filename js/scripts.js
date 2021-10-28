@@ -47,10 +47,12 @@ $('.gradient-button').on('mouseleave', function(){
 
 // slider
 $('.photo').slick({
+  dots: false,
   infinite: true,
   speed: 700,
   slidesToScroll: 4,
   variableWidth: true,
+  arrows: false,
   responsive: [
 
     {
@@ -112,5 +114,5 @@ function tabs(event, clothes) {
 
   event.currentTarget.classList += " switch_active";
   $(`#${clothes}`).addClass('active');
-  
+
 } 
