@@ -37,11 +37,9 @@ function pbStatus(n) {
 
 // dynamic shadow gradient 
 $('.gradient-button').on('mousedown', function(){
-  console.log(1);
   $(this).addClass('active');
 })
 $('.gradient-button').on('mouseleave', function(){
-  console.log(1);
   $(this).removeClass('active');
 })
 
@@ -97,7 +95,7 @@ $('.modal-wrap').on('click', function (event) {
 
 
 // Tabs
-function tabs(clothes) {
+function tabs(event, clothes) {
 
   let i, tabcontent, tablinks;
   tabcontent = $(".cards");
@@ -108,9 +106,11 @@ function tabs(clothes) {
   }
 
   for (tablink of tablinks) {
-    $(tab).removeClass('switch_active');
+    $(tablink).removeClass('switch_active');
   }
 
-  $(document.getElementById(clothes)).addClass('active')
 
-}
+  event.currentTarget.classList += " switch_active";
+  $(`#${clothes}`).addClass('active');
+  
+} 
