@@ -58,7 +58,7 @@
 
 .section-main {
   background-color: black;
-  background-image: url(../img/back.png);
+  background-image: url(../img/back.jpg);
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1001,7 +1001,7 @@ nav {
 
 @media screen and (min-width: 640px) {
   .section-main {
-    background-image: url(../img/back2.png);
+    background-image: url(../img/back2.jpg);
     background-size: cover;
   }
 
@@ -1029,7 +1029,7 @@ nav {
 
 @media screen and (min-width: 960px) {
   .section-main {
-    background-image: url(../img/back3.png);
+    background-image: url(../img/back3.jpg);
   }
 
   .button {
@@ -1107,7 +1107,7 @@ nav {
   }
 
   .section-main {
-    background-image: url(../img/back.png);
+    background-image: url(../img/back.jpg);
     background-position: top;
   }
 
