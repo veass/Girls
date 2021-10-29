@@ -627,8 +627,6 @@
   position: absolute;
   width: 100%;
   bottom: 40%;
-  /* Form Progress */
-  /* Done / Active */
 }
 
 .circles .progress {
@@ -1084,6 +1082,11 @@ nav {
 
   .container {
     width: 640px;
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .circles {
+    display: none;
   }
 }
 
